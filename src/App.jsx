@@ -68,11 +68,11 @@ const App = () => {
 
  return(
   <div className= {` flex flex-col gap-10 justify-center items-center h-screen ${bgImg} bg-cover bg-center`}>
-    <h1 className="text-center text-3xl font-medium ">Mausam Vibhag</h1>
+    <h1 className="text-center text-3xl font-medium drop-shadow-[0_1.2px_1.2px_rgba(0,0,0,0.8)] ">Mausam Vibhag</h1>
     <Weather receiveWeatherData={receiveWeatherData}/>
-    <div >
-      <h2 className="text-lg">
-        Made with 💌 by Durgesh Gupta
+    <div className="text-white">
+      <h2 className="text-lg lg:text-2xl md:text-xl drop-shadow-[0_1.2px_1.2px_rgba(0,0,0,0.8)]">
+        Made with 💌 by <span className=" hover:underline hover:decoration-blue-400"><a href="https://www.linkedin.com/in/durgesh-gupta-kol/" target="_blank">Durgesh Gupta</a></span>
       </h2>
     </div>
   </div>
