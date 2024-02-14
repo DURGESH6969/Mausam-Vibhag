@@ -17,7 +17,7 @@ const Weather = ({receiveWeatherData}) => {
   const submitOnClickHandler = async () => {
    
     try {
-        const response =  await fetch(`http://api.weatherapi.com/v1/current.json?key=${apiKey}&q=${cityName}&aqi=no`);
+        const response =  await fetch(`https://api.weatherapi.com/v1/current.json?key=${apiKey}&q=${cityName}&aqi=no`);
         if (!response.ok) {
           throw new Error('Failed to fetch weather data');
         }
